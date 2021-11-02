@@ -6,7 +6,6 @@ class AirShippingCalculator (ShippingCalculator):
     def __init__(self, custNm, custContact):
         ShippingCalculator.__init__(self, custNm, custContact)
 
-
     def computeCharges(self):
         return super().baseCharge() + self.airPackagingCharge() + super().customCharge() + self.airFreightCharges()
 
