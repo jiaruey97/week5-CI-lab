@@ -2,7 +2,7 @@ from abc import ABCMeta, abstractmethod
 from countryCharges import CountryCharges
 
 
-class ShippingCalculator(ABC):
+class ShippingCalculator():
     __metaclass__ = ABCMeta
     def __init__(self, custNm, custContact):
         self.__customerContact = custContact
