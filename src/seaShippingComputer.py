@@ -4,7 +4,7 @@ from shippingCalculator import ShippingCalculator
 
 class SeaShippingCalculator (ShippingCalculator):
     def __init__(self, custNm, custContact):
-        ShippingCalculator.__init__(self,custNm, custContact)
+        ShippingCalculator.__init__(self, custNm, custContact)
 
     def computeCharges(self):
         return super().baseCharge() + self.seaPackagingCharge() + super().customCharge() + self.seaFreightCharges()
