@@ -2,13 +2,11 @@ import unittest
 from airShippingCalculator import AirShippingCalculator
 from landShippingCalculator import LandShippingCalculator
 from seaShippingComputer import SeaShippingCalculator
-from shippingCalculator import ShippingCalculator 
+# from shippingCalculator import ShippingCalculator
 # from countryCharges import CountryCharges
 
 
 class computeCharge(unittest.TestCase):
-
-
     def setUp(self):
         self.airJ = AirShippingCalculator("Jordan", 91234567)
         self.airJ.setFromToCountry('SG', 'USA')
@@ -43,7 +41,7 @@ class computeCharge(unittest.TestCase):
         self.seaB2 = None
 
     def test_getBaseCharge(self):
-        basecharge = self.cc.getBaseCharge('SG','USA')
+        basecharge = self.cc.getBaseCharge('SG', 'USA')
         self.assertEqual(basecharge, 100)
 
     def test_getCustomCharges(self):
