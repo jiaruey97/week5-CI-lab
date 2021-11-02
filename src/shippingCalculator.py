@@ -11,7 +11,7 @@ class ShippingCalculator(ABC):
         self.__toAddress = toAdd
         self.__toContact = toCon
 
-    def setFromToCountry(self,frCountry, toCountry):
+    def setFromToCountry(self, frCountry, toCountry):
         self.__fromCountry = frCountry
         self.__toCountry = toCountry
 

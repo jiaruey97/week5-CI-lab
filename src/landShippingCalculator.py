@@ -1,9 +1,8 @@
 from shippingCalculator import ShippingCalculator
-from countryCharges import CountryCharges
+# from countryCharges import CountryCharges
+
 
 class LandShippingCalculator (ShippingCalculator):
-
-
     def __init__(self, custNm, custContact):
         ShippingCalculator.__init__(self, custNm, custContact)
 

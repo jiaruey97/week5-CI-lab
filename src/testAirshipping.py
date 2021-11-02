@@ -3,7 +3,7 @@ from airShippingCalculator import AirShippingCalculator
 from landShippingCalculator import LandShippingCalculator
 from seaShippingComputer import SeaShippingCalculator
 from shippingCalculator import ShippingCalculator 
-from countryCharges import CountryCharges
+# from countryCharges import CountryCharges
 
 
 class computeCharge(unittest.TestCase):
