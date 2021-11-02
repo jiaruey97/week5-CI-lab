@@ -4,7 +4,7 @@ from countryCharges import CountryCharges
 
 class ShippingCalculator():
     __metaclass__ = ABCMeta
-    
+
     def __init__(self, custNm, custContact):
         self.__customerContact = custContact
         self.__customerName = custNm
