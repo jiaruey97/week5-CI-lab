@@ -8,6 +8,7 @@ from countryCharges import CountryCharges
 
 class computeCharge(unittest.TestCase):
 
+
     def setUp(self):
         self.airJ = AirShippingCalculator("Jordan", 91234567)
         self.airJ.setFromToCountry('SG','USA')
@@ -32,6 +33,7 @@ class computeCharge(unittest.TestCase):
 
         self.cc = CountryCharges()
 
+
     def tearDown(self):
         self.airJ = None
         self.landM = None
@@ -41,19 +43,24 @@ class computeCharge(unittest.TestCase):
         self.landM2 = None
         self.seaB2 = None
 
+
     def test_getBaseCharge(self):
         basecharge = self.cc.getBaseCharge('SG','USA')
         self.assertEqual(basecharge, 100)
 
+
     def test_getCustomCharges(self):
         customcharge = self.cc.getCustomCharges('USA')
         self.assertEqual(customcharge, 100)
-    
+
+
     def test_getWeight(self):
         self.assertEqual(self.airJ.getWeight(), 5)
 
+
     def test_getSize(self):
         self.assertEqual(self.airJ.getSize(), 5)
+
 
     def test_computeCharges(self):
         self.assertEqual(self.airJ.computeCharges(), 260)
