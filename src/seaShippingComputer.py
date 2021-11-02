@@ -10,7 +10,7 @@ class SeaShippingCalculator (ShippingCalculator):
         return super().baseCharge() + self.seaPackagingCharge() + super().customCharge() + self.seaFreightCharges()
 
     def seaPackagingCharge(self):
-        return super().getSize()*super().getWeight()
+        return super().getSize() * super().getWeight()
 
     def seaFreightCharges(self):
-        return (super().getSize()* 0.75) + (super().getWeight()* 0.75) + 100
+        return (super().getSize() * 0.75) + (super().getWeight() * 0.75) + 100

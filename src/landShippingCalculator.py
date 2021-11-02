@@ -10,7 +10,7 @@ class LandShippingCalculator (ShippingCalculator):
         return super().baseCharge() + self.landPackagingCharge() + super().customCharge() + self.landFreightCharges()
 
     def landPackagingCharge(self):
-        return (super().getSize()* super().getWeight())* 0.9
+        return (super().getSize() * super().getWeight()) * 0.9
 
     def landFreightCharges(self):
-        return (super().getSize()* 0.25) + (super().getWeight()* 0.75) + 10
+        return (super().getSize() * 0.25) + (super().getWeight() * 0.75) + 10
