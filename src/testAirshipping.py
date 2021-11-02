@@ -3,7 +3,7 @@ from airShippingCalculator import AirShippingCalculator
 from landShippingCalculator import LandShippingCalculator
 from seaShippingComputer import SeaShippingCalculator
 # from shippingCalculator import ShippingCalculator
-# from countryCharges import CountryCharges
+from countryCharges import CountryCharges
 
 
 class computeCharge(unittest.TestCase):
@@ -21,7 +21,7 @@ class computeCharge(unittest.TestCase):
         self.landM2 = LandShippingCalculator("Max", 93345678)
         self.landM2.setFromToCountry('USA', 'CHINA')
         self.landM2.setSizeWeight(5, 5)
-    
+
         self.seaB = SeaShippingCalculator("Bane", 93456789)
         self.seaB.setFromToCountry('INDIA', 'CHINA')
         self.seaB.setSizeWeight(5, 5)

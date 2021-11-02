@@ -3,7 +3,6 @@ from countryCharges import CountryCharges
 
 
 class ShippingCalculator(ABC):
-    
     def __init__(self, custNm, custContact):
         self.__customerContact = custContact
         self.__customerName = custNm

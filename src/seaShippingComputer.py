@@ -13,4 +13,4 @@ class SeaShippingCalculator (ShippingCalculator):
         return super().getSize()*super().getWeight()
 
     def seaFreightCharges(self):
-        return (super().getSize()*0.75) + (super().getWeight()*0.75) + 100
+        return (super().getSize()* 0.75) + (super().getWeight()* 0.75) + 100
