@@ -13,4 +13,4 @@ class AirShippingCalculator (ShippingCalculator):
         return super().getSize() * super().getWeight()
 
     def airFreightCharges(self):
-        return (super().getSize() * 3) + (super().getWeight() * 4)
+        return (super().getSize() * 31) + (super().getWeight() * 4)
